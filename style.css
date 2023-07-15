@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #e6e6e6;
+}
+.text {
+    margin-bottom: 25px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #333;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.cell[data-cell="X"] {
+    color: #f00;
+}
+
+.cell[data-cell="O"] {
+    color: #00f;
+}
